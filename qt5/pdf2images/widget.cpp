@@ -46,6 +46,8 @@ static bool pdf2images(const QString &pdfFileName, const QString &imageDir, QStr
         if (err != nullptr) *err = "encrypted document";
         return false;
     }
+    doc->setRenderHint(Poppler::Document::Antialiasing);
+    doc->setRenderHint(Poppler::Document::TextAntialiasing);
     int count = doc->numPages();
     for (int i = 0; i < count; ++i) {
         QScopedPointer<Poppler::Page> p(doc->page(i));
