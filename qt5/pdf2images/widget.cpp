@@ -75,7 +75,7 @@ void Widget::on_convertBtn_clicked()
     if (ok) {
         QMessageBox::information(this, "INFO", "convert ok!");
     } else {
-        QMessageBox::warning(this, "WARN", "convert failed!");
+        QMessageBox::warning(this, "WARN", error);
     }
 }
 
