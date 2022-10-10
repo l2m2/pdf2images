@@ -1,4 +1,4 @@
-#ifndef WIDGET_H
+﻿#ifndef WIDGET_H
 #define WIDGET_H
 
 #include <QWidget>
@@ -19,6 +19,8 @@ private slots:
     void on_selectPdfBtn_clicked();
     void on_selectOutputBtn_clicked();
     void on_convertBtn_clicked();
+
+    void on_convertToSingleImageBtn_clicked();
 
 private:
     Ui::Widget *ui;
